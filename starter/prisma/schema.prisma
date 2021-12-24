@@ -1,0 +1,27 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+
+model Cliente{
+  id    Int     @id @default(autoincrement())
+  balance Float
+  email String  @unique
+  name  String
+}
+model Productos{
+  id    Int     @id @default(autoincrement())
+  valor Float
+  name  String
+}
+
+model Compra{
+  id    Int     @id @default(autoincrement())
+  idcliente  Int 
+  idproducto Int
+}
