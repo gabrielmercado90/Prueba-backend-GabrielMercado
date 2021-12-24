@@ -145,11 +145,11 @@ function menuPrinter() {
 
               readline.question('escoge el id de un producto ', async produ => {
                 await createOrder(cliente.email, produ)
- 
+                menuPrinter()
               })
          
 
-          menuPrinter()
+          
 
         } else {
           console.log('usuario no registrado intentalo de nuevo')
