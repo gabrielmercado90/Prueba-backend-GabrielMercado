@@ -10,3 +10,7 @@ Esta prueba fue realizada con las siguientes restricciones:
 1. Usar serverless-offline
 2. No usar express
 3. Usar prisma.io
+
+Para ejecutar el código se debe escribir en consola la siguiente lina
+
+node clienteController.js
