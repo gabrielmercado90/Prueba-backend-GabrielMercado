@@ -141,7 +141,7 @@ function menuPrinter() {
           for (prod of productos) {
             console.log(prod.id + '---' + prod.name + ' tiene un valor de: $' + prod.valor)
           }
-          console.log('para terminar de comprar unde x')
+
 
               readline.question('escoge el id de un producto ', async produ => {
                 await createOrder(cliente.email, produ)
